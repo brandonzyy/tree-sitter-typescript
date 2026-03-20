@@ -24,6 +24,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate parsers with correct CLI version
+        run: |
+          npm install
+          cd typescript && npx tree-sitter generate && cd ..
+          cd tsx && npx tree-sitter generate && cd ..
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -69,10 +80,7 @@ jobs:
           name: "manon-tree-sitter-typescript ${{ github.ref_name }}"
           body: |
             Manon fork of tree-sitter-typescript with grammar fixes:
-            - export type * syntax
-            - Generic member expression in type annotations
-            - instantiation_expression in template calls
-            - type_arguments in template calls
+            - export type * from "./mod" syntax (TS 5.0+)
           files: dist/*.whl
           draft: false
           prerelease: false
