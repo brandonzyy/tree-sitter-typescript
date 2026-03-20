@@ -3864,10 +3864,6 @@
                     {
                       "type": "SYMBOL",
                       "name": "new_expression"
-                    },
-                    {
-                      "type": "SYMBOL",
-                      "name": "instantiation_expression"
                     }
                   ]
                 }
@@ -12037,6 +12033,5 @@
     "pattern",
     "type",
     "primary_type"
-  ],
-  "reserved": {}
+  ]
 }
