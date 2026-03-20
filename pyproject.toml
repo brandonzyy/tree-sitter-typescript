@@ -3,9 +3,9 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tree-sitter-typescript"
-description = "TypeScript and TSX grammars for tree-sitter"
-version = "0.23.2"
+name = "manon-tree-sitter-typescript"
+description = "TypeScript and TSX grammars for tree-sitter (Manon fork with grammar fixes)"
+version = "0.23.3"
 keywords = ["incremental", "parsing", "tree-sitter", "typescript", "tsx"]
 classifiers = [
   "Intended Audience :: Developers",
