@@ -3870,22 +3870,6 @@
               },
               {
                 "type": "FIELD",
-                "name": "type_arguments",
-                "content": {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "SYMBOL",
-                      "name": "type_arguments"
-                    },
-                    {
-                      "type": "BLANK"
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "FIELD",
                 "name": "arguments",
                 "content": {
                   "type": "SYMBOL",
@@ -9037,18 +9021,6 @@
               }
             ]
           }
-        },
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "type_arguments"
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
         }
       ]
     },
@@ -11247,9 +11219,6 @@
     ],
     [
       "class"
-    ],
-    [
-      "_type_query_member_expression_in_type_annotation"
     ],
     [
       "nested_identifier",
